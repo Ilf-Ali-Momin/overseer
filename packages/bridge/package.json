@@ -1,0 +1,25 @@
+{
+  "name": "@overseer/bridge",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.11.0",
+    "@overseer/shared": "workspace:*",
+    "chokidar": "^6.0.0",
+    "ws": "^8.23.0",
+    "zod": "^4.6.7"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc -p tsconfig.json",
+    "record": "tsx src/record.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/ws": "^8.18.2",
+    "tsx": "^4.23.15"
+  }
+}

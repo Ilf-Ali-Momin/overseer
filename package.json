@@ -1,0 +1,35 @@
+{
+  "name": "overseer",
+  "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@12.4.2",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n bridge,web -c cyan,magenta \"pnpm dev:bridge\" \"pnpm dev:web\"",
+    "dev:web": "pnpm --filter @overseer/web dev",
+    "dev:bridge": "pnpm --filter @overseer/bridge dev",
+    "record": "pnpm --filter @overseer/bridge record",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json && pnpm -r --parallel typecheck",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.6",
+    "concurrently": "^10.0.7",
+    "eslint": "^10.15.0",
+    "eslint-config-prettier": "^10.1.8",
+    "gifenc": "1.0.3",
+    "globals": "^17.14.0",
+    "prettier": "^3.10.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.73.0",
+    "vitest": "^5.1.1"
+  }
+}

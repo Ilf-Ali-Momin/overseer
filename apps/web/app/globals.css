@@ -1,0 +1,31 @@
+:root {
+  --bg: #0b0d12;
+  --fg: #e6e8ee;
+  --muted: #8a90a2;
+  --accent: #7c9cff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    sans-serif;
+}
+
+/* drei <Stats /> panel (dev only): keep it clear of the title. */
+.overseer-stats {
+  top: auto !important;
+  bottom: 16px !important;
+  left: 16px !important;
+}

@@ -1,0 +1,9 @@
+pnpm-lock.yaml
+.next
+node_modules
+dist
+coverage
+*.jsonl
+apps/web/public/demo
+.claude-flow
+.claude/*.json

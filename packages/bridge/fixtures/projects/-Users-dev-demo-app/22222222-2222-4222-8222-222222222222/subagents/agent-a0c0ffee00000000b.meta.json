@@ -1,0 +1,8 @@
+{
+  "agentType": "Explore",
+  "description": "Scan TODOs",
+  "toolUseId": "toolu_p_agent",
+  "spawnDepth": 1,
+  "requestShape": "foreground",
+  "requestNonInteractive": true
+}

@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+out/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+coverage/
+.turbo/
+.vercel/
+
+# Env and secrets (never commit). Keep example files.
+.env
+.env*
+!.env.example
+*.pem
+*.key
+
+# Recordings that are NOT redacted. Only redacted demos in apps/web/public/demo/ are committed.
+recordings/
+*.raw.json
+*.raw.jsonl
+*.unredacted.*
+# Raw transcripts must never land in the repo; fixtures go in packages/bridge/fixtures/ after redaction.
+*.jsonl
+!packages/bridge/fixtures/**/*.jsonl
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Local Claude plugin state (not part of this project)
+.claude-flow/
+.claude/
+CLAUDE.md
+HANDOFF.md
+START_HERE.md
+docs/BUILD_PLAN.md
+.vercel
