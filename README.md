@@ -20,7 +20,7 @@ Everything runs on your machine. Transcripts are read locally and never leave it
 
 ## Quick start
 
-**Fastest:** run `npx overseer-bridge`, open https://overseer-liard-seven.vercel.app and click
+**Fastest:** run `npx overseer-bridge`, open https://agent-overseer.vercel.app/ and click
 **Go live** (allow local network access if Chrome asks). No clone needed.
 
 **From source:**
