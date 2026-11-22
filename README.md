@@ -11,7 +11,7 @@ and gives a short safety verdict.
 
 ![Overseer replaying a recorded session: two agents at their desks, a thought bubble, the timeline scrubber](docs/media/overseer.gif)
 
-**Try the demo:** https://overseer-liard-seven.vercel.app (a recorded session). To watch your own
+**Try the demo:** https://agent-overseer.vercel.app/ (a recorded session). To watch your own
 agents there, run `npx overseer-bridge` (or `pnpm dev:bridge` from this repo)
 and click **Go live**; Chrome may ask to allow local network access.
 
